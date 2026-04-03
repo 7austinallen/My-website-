@@ -4,134 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Austin | Life Coach</title>
+  <title>Austin Clarity Co. | Life Coach</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 ```
 :root {
-  --cream: #0D0D0D;
-  --warm-white: #141414;
-  --charcoal: #C9A84C;
-  --mid: #D4B87A;
-  --light: #8A7340;
-  --accent: #C9A84C;
-  --accent-light: #E2CC8A;
-  --border: #2A2200;
+  --bg: #0D0D0D;
+  --bg2: #111100;
+  --bg3: #141414;
+  --gold: #C9A84C;
+  --gold-light: #E2CC8A;
+  --gold-dim: rgba(201,168,76,0.65);
+  --gold-faint: rgba(201,168,76,0.25);
+  --border: rgba(201,168,76,0.15);
   --serif: 'Cormorant Garamond', serif;
   --sans: 'DM Sans', sans-serif;
 }
 
-body { background: #0D0D0D; }
-
-.hero-placeholder {
-  background: linear-gradient(145deg, #1A1400 0%, #2C2000 100%) !important;
-}
-
-.about-img {
-  background: linear-gradient(160deg, #1A1400 0%, #2C2000 100%) !important;
-}
-
-.stuck-card {
-  background: rgba(201,168,76,0.04) !important;
-  border: 1px solid rgba(201,168,76,0.12) !important;
-}
-.stuck-card:hover { background: rgba(201,168,76,0.09) !important; }
-.stuck-card h3 { color: #E2CC8A !important; }
-.stuck-card p { color: rgba(226,204,138,0.55) !important; }
-
-#stuck { background: #0A0800 !important; }
-#stuck .section-title { color: #E2CC8A !important; }
-
-#schedule { background: #080600 !important; }
-#schedule .section-title { color: #E2CC8A !important; }
-.schedule-sub { color: rgba(226,204,138,0.55) !important; }
-.schedule-features li { color: rgba(226,204,138,0.6) !important; }
-
-.schedule-form {
-  background: rgba(201,168,76,0.05) !important;
-  border: 1px solid rgba(201,168,76,0.15) !important;
-}
-
-.form-group label { color: rgba(201,168,76,0.5) !important; }
-.form-group input,
-.form-group select,
-.form-group textarea {
-  color: #E2CC8A !important;
-  border-bottom: 1px solid rgba(201,168,76,0.2) !important;
-}
-.form-group select option { background: #1A1400 !important; }
-
-.form-submit {
-  color: #0D0D0D !important;
-  background: #C9A84C !important;
-}
-.form-submit:hover { background: #E2CC8A !important; }
-
-.form-success h3 { color: #E2CC8A !important; }
-.form-success p { color: rgba(226,204,138,0.5) !important; }
-
-nav { background: rgba(13,13,13,0.95) !important; }
-.nav-links a { color: rgba(201,168,76,0.7) !important; }
-.nav-links a:hover { color: #E2CC8A !important; }
-.nav-logo { color: #E2CC8A !important; }
-.nav-cta { background: #C9A84C !important; color: #0D0D0D !important; }
-.nav-cta:hover { background: #E2CC8A !important; }
-
-.hero-h1 { color: #E2CC8A !important; }
-.hero-sub { color: rgba(201,168,76,0.7) !important; }
-.btn-primary { background: #C9A84C !important; color: #0D0D0D !important; }
-.btn-primary:hover { background: #E2CC8A !important; }
-.btn-ghost { color: rgba(201,168,76,0.6) !important; border-color: rgba(201,168,76,0.3) !important; }
-.btn-ghost:hover { color: #E2CC8A !important; border-color: #C9A84C !important; }
-
-.stat-num { color: #E2CC8A !important; }
-.stat-label { color: rgba(201,168,76,0.5) !important; }
-.hero-monogram { color: rgba(201,168,76,0.1) !important; }
-.hero-photo-note { color: rgba(201,168,76,0.4) !important; }
-
-.section-title { color: #E2CC8A !important; }
-.about-body { color: rgba(201,168,76,0.7) !important; }
-.about-signature { color: #E2CC8A !important; }
-.about-mono { color: rgba(201,168,76,0.07) !important; }
-
-.service-item { border-color: rgba(201,168,76,0.15) !important; }
-.service-item h3 { color: #E2CC8A !important; }
-.service-item p { color: rgba(201,168,76,0.65) !important; }
-.service-btn { background: #C9A84C !important; color: #0D0D0D !important; }
-.service-btn:hover { background: #E2CC8A !important; }
-
-.advice-box { background: #141400 !important; border-color: rgba(201,168,76,0.2) !important; }
-.advice-textarea { color: #E2CC8A !important; border-color: rgba(201,168,76,0.2) !important; }
-.advice-textarea::placeholder { color: rgba(201,168,76,0.3) !important; }
-.advice-response-text { color: rgba(201,168,76,0.75) !important; }
-.advice-submit { background: #C9A84C !important; color: #0D0D0D !important; }
-.advice-submit:hover { background: #E2CC8A !important; }
-.advice-cta-note { color: rgba(201,168,76,0.7) !important; }
-
-.testi-card { border-color: rgba(201,168,76,0.15) !important; }
-.testi-text { color: rgba(201,168,76,0.65) !important; }
-.testi-name { color: #E2CC8A !important; }
-.testi-role { color: rgba(201,168,76,0.4) !important; }
-
-footer { border-color: rgba(201,168,76,0.15) !important; }
-.footer-logo { color: #E2CC8A !important; }
-.footer-copy { color: rgba(201,168,76,0.4) !important; }
-.footer-links a { color: rgba(201,168,76,0.5) !important; }
-.footer-links a:hover { color: #E2CC8A !important; }
-
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--cream);
-  color: var(--charcoal);
+  background: var(--bg);
+  color: var(--gold-light);
   font-family: var(--sans);
   font-weight: 300;
   line-height: 1.7;
   overflow-x: hidden;
 }
 
+/* NAV */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -140,7 +43,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem 5vw;
-  background: rgba(250,248,245,0.92);
+  background: rgba(13,13,13,0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
@@ -152,26 +55,22 @@ nav.scrolled { border-color: var(--border); }
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--charcoal);
+  color: var(--gold-light);
   text-decoration: none;
 }
-.nav-logo span { color: var(--accent); }
+.nav-logo span { color: var(--gold); }
 
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-}
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--mid);
+  color: var(--gold-dim);
   transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--charcoal); }
+.nav-links a:hover { color: var(--gold-light); }
 
 .nav-cta {
   font-size: 0.78rem;
@@ -179,18 +78,20 @@ nav.scrolled { border-color: var(--border); }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--cream);
-  background: var(--charcoal);
+  color: #0D0D0D;
+  background: var(--gold);
   padding: 0.6rem 1.4rem;
   transition: background 0.25s;
 }
-.nav-cta:hover { background: var(--accent); }
+.nav-cta:hover { background: var(--gold-light); }
 
+/* HERO */
 #hero {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 5rem;
+  background: var(--bg);
 }
 
 .hero-left {
@@ -206,7 +107,7 @@ nav.scrolled { border-color: var(--border); }
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--gold);
   margin-bottom: 1.8rem;
 }
 
@@ -215,25 +116,20 @@ nav.scrolled { border-color: var(--border); }
   font-size: clamp(3rem, 5vw, 5.2rem);
   font-weight: 300;
   line-height: 1.1;
-  color: var(--charcoal);
+  color: var(--gold-light);
   margin-bottom: 2rem;
 }
-.hero-h1 em { font-style: italic; color: var(--accent); }
+.hero-h1 em { font-style: italic; color: var(--gold); }
 
 .hero-sub {
   font-size: 1rem;
-  color: var(--mid);
+  color: var(--gold-dim);
   max-width: 400px;
   margin-bottom: 3rem;
   line-height: 1.8;
 }
 
-.hero-btns {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
+.hero-btns { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 
 .btn-primary {
   font-family: var(--sans);
@@ -242,13 +138,13 @@ nav.scrolled { border-color: var(--border); }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--cream);
-  background: var(--charcoal);
+  color: #0D0D0D;
+  background: var(--gold);
   padding: 1rem 2rem;
   display: inline-block;
   transition: background 0.25s, transform 0.2s;
 }
-.btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
 
 .btn-ghost {
   font-size: 0.8rem;
@@ -256,16 +152,16 @@ nav.scrolled { border-color: var(--border); }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--mid);
-  border-bottom: 1px solid var(--border);
+  color: var(--gold-dim);
+  border-bottom: 1px solid var(--gold-faint);
   padding-bottom: 2px;
   transition: color 0.2s, border-color 0.2s;
 }
-.btn-ghost:hover { color: var(--charcoal); border-color: var(--charcoal); }
+.btn-ghost:hover { color: var(--gold-light); border-color: var(--gold); }
 
 .hero-right {
   position: relative;
-  background: var(--warm-white);
+  background: var(--bg2);
   overflow: hidden;
   animation: fadeIn 1.2s ease both 0.2s;
 }
@@ -281,7 +177,7 @@ nav.scrolled { border-color: var(--border); }
 .hero-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, #EDE9E3 0%, #D9D3C9 100%);
+  background: linear-gradient(145deg, #1A1400 0%, #2C2000 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +189,7 @@ nav.scrolled { border-color: var(--border); }
   font-family: var(--serif);
   font-size: 9rem;
   font-weight: 300;
-  color: rgba(28,28,28,0.08);
+  color: rgba(201,168,76,0.1);
   line-height: 1;
   user-select: none;
 }
@@ -302,7 +198,7 @@ nav.scrolled { border-color: var(--border); }
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--light);
+  color: rgba(201,168,76,0.35);
 }
 
 .hero-stat-strip {
@@ -315,20 +211,10 @@ nav.scrolled { border-color: var(--border); }
 }
 
 .stat { text-align: center; animation: fadeUp 1s ease both 0.6s; }
-.stat-num {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 300;
-  color: var(--charcoal);
-  display: block;
-}
-.stat-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--light);
-}
+.stat-num { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--gold-light); display: block; }
+.stat-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(201,168,76,0.45); }
 
+/* SHARED */
 section { padding: 7rem 8vw; }
 
 .section-eyebrow {
@@ -336,7 +222,7 @@ section { padding: 7rem 8vw; }
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--gold);
   margin-bottom: 1rem;
   display: block;
 }
@@ -346,28 +232,24 @@ section { padding: 7rem 8vw; }
   font-size: clamp(2.2rem, 3.5vw, 3.5rem);
   font-weight: 300;
   line-height: 1.2;
-  color: var(--charcoal);
+  color: var(--gold-light);
   margin-bottom: 1.5rem;
 }
 
-.divider {
-  width: 3rem;
-  height: 1px;
-  background: var(--accent);
-  margin-bottom: 2rem;
-}
+.divider { width: 3rem; height: 1px; background: var(--gold); margin-bottom: 2rem; }
 
+/* ABOUT */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   align-items: center;
-  background: var(--warm-white);
+  background: var(--bg3);
 }
 
 .about-img {
   aspect-ratio: 4/5;
-  background: linear-gradient(160deg, #E6E2DB 0%, #CEC9C1 100%);
+  background: linear-gradient(160deg, #1A1400 0%, #2C2000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,80 +265,40 @@ section { padding: 7rem 8vw; }
   z-index: 0;
 }
 
-.about-mono {
-  font-family: var(--serif);
-  font-size: 7rem;
-  font-weight: 300;
-  color: rgba(28,28,28,0.07);
-  position: relative;
-  z-index: 1;
-}
+.about-mono { font-family: var(--serif); font-size: 7rem; font-weight: 300; color: rgba(201,168,76,0.08); position: relative; z-index: 1; }
 
-.about-body { font-size: 1rem; color: var(--mid); line-height: 1.9; }
+.about-body { font-size: 1rem; color: var(--gold-dim); line-height: 1.9; }
 .about-body p + p { margin-top: 1.2rem; }
 
-.about-signature {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 300;
-  color: var(--charcoal);
-  margin-top: 2rem;
-  display: block;
-}
+.about-signature { font-family: var(--serif); font-size: 2rem; font-style: italic; font-weight: 300; color: var(--gold-light); margin-top: 2rem; display: block; }
 
-#stuck {
-  text-align: center;
-  background: var(--charcoal);
-  padding: 7rem 8vw;
-}
-
-#stuck .section-eyebrow { color: var(--accent-light); }
-#stuck .section-title { color: var(--cream); }
+/* STUCK */
+#stuck { text-align: center; background: #080600; padding: 7rem 8vw; }
+#stuck .section-eyebrow { color: var(--gold-light); }
 #stuck .divider { margin: 0 auto 2rem; }
 
-.stuck-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  margin-top: 4rem;
-}
+.stuck-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 4rem; }
 
 .stuck-card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(201,168,76,0.04);
+  border: 1px solid rgba(201,168,76,0.1);
   padding: 2.5rem 2rem;
   text-align: left;
   transition: background 0.3s;
   cursor: default;
 }
-.stuck-card:hover { background: rgba(255,255,255,0.06); }
+.stuck-card:hover { background: rgba(201,168,76,0.08); }
 
 .stuck-icon { font-size: 1.5rem; margin-bottom: 1.2rem; display: block; }
 
-.stuck-card h3 {
-  font-family: var(--serif);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--cream);
-  margin-bottom: 0.8rem;
-}
+.stuck-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--gold-light); margin-bottom: 0.8rem; }
+.stuck-card p { font-size: 0.88rem; color: rgba(201,168,76,0.5); line-height: 1.8; }
 
-.stuck-card p {
-  font-size: 0.88rem;
-  color: rgba(250,248,245,0.5);
-  line-height: 1.8;
-}
-
-#services {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 6rem;
-  align-items: start;
-}
+/* SERVICES */
+#services { display: grid; grid-template-columns: 1fr 2fr; gap: 6rem; align-items: start; background: var(--bg); }
 
 .services-sticky { position: sticky; top: 8rem; }
-.service-list { display: flex; flex-direction: column; gap: 0; }
+.service-list { display: flex; flex-direction: column; }
 
 .service-item {
   padding: 2rem 0;
@@ -470,21 +312,9 @@ section { padding: 7rem 8vw; }
 .service-item:hover { padding-left: 0.5rem; }
 .service-item:first-child { border-top: 1px solid var(--border); }
 
-.service-num {
-  font-family: var(--serif);
-  font-size: 0.85rem;
-  color: var(--accent);
-  padding-top: 0.15rem;
-}
-
-.service-item h3 {
-  font-family: var(--serif);
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.service-item p { font-size: 0.9rem; color: var(--mid); line-height: 1.8; }
+.service-num { font-family: var(--serif); font-size: 0.85rem; color: var(--gold); padding-top: 0.15rem; }
+.service-item h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: var(--gold-light); margin-bottom: 0.5rem; }
+.service-item p { font-size: 0.9rem; color: var(--gold-dim); line-height: 1.8; }
 
 .service-badge {
   display: inline-block;
@@ -492,8 +322,8 @@ section { padding: 7rem 8vw; }
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: var(--gold);
+  border: 1px solid var(--gold);
   padding: 0.2rem 0.6rem;
   margin-top: 0.8rem;
 }
@@ -506,33 +336,20 @@ section { padding: 7rem 8vw; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--cream);
-  background: var(--charcoal);
+  color: #0D0D0D;
+  background: var(--gold);
   padding: 0.6rem 1.2rem;
   transition: background 0.25s;
 }
-.service-btn:hover { background: var(--accent); }
+.service-btn:hover { background: var(--gold-light); }
 
-#advice { background: var(--warm-white); padding: 7rem 8vw; }
-
+/* ADVICE */
+#advice { background: var(--bg3); padding: 7rem 8vw; }
 .advice-inner { max-width: 720px; margin: 0 auto; text-align: center; }
 
-.advice-box {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  padding: 2.5rem;
-  margin-top: 3rem;
-  text-align: left;
-}
+.advice-box { background: #0A0900; border: 1px solid var(--border); padding: 2.5rem; margin-top: 3rem; text-align: left; }
 
-.advice-prompt-label {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--light);
-  margin-bottom: 0.6rem;
-}
+.advice-prompt-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.45); margin-bottom: 0.6rem; }
 
 .advice-textarea {
   width: 100%;
@@ -541,17 +358,17 @@ section { padding: 7rem 8vw; }
   background: transparent;
   font-family: var(--sans);
   font-size: 0.95rem;
-  color: var(--charcoal);
+  color: var(--gold-light);
   padding: 0.8rem 0;
   resize: none;
   outline: none;
   min-height: 80px;
   line-height: 1.7;
 }
-.advice-textarea::placeholder { color: var(--light); }
-.advice-textarea:focus { border-color: var(--accent); }
+.advice-textarea::placeholder { color: rgba(201,168,76,0.3); }
+.advice-textarea:focus { border-color: var(--gold); }
 
-.advice-actions { display: flex; justify-content: flex-end; margin-top: 1.2rem; }
+.advice-actions { display: flex; justify-content: flex-end; gap: 0.8rem; margin-top: 1.2rem; flex-wrap: wrap; }
 
 .advice-submit {
   font-family: var(--sans);
@@ -559,43 +376,30 @@ section { padding: 7rem 8vw; }
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--cream);
-  background: var(--charcoal);
+  color: #0D0D0D;
+  background: var(--gold);
   border: none;
   padding: 0.8rem 1.8rem;
   cursor: pointer;
   transition: background 0.25s;
+  text-decoration: none;
+  display: inline-block;
 }
-.advice-submit:hover { background: var(--accent); }
+.advice-submit:hover { background: var(--gold-light); }
 .advice-submit:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .advice-response { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); display: none; }
 .advice-response.visible { display: block; }
 
-.advice-response-label {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
+.advice-response-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.advice-response-text { font-size: 0.95rem; color: var(--gold-dim); line-height: 1.9; }
 
-.advice-response-text { font-size: 0.95rem; color: var(--mid); line-height: 1.9; }
-
-.advice-cta-note {
-  margin-top: 1.5rem;
-  font-size: 0.85rem;
-  color: var(--mid);
-  font-style: italic;
-  border-left: 2px solid var(--accent);
-  padding-left: 1rem;
-}
+.advice-cta-note { margin-top: 1.5rem; font-size: 0.85rem; color: var(--gold-dim); font-style: italic; border-left: 2px solid var(--gold); padding-left: 1rem; }
 
 .loading-dots span {
   display: inline-block;
   width: 6px; height: 6px;
-  background: var(--accent);
+  background: var(--gold);
   border-radius: 50%;
   margin: 0 2px;
   animation: bounce 1.2s infinite;
@@ -603,67 +407,393 @@ section { padding: 7rem 8vw; }
 .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
 .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
 
-#testimonials { padding: 7rem 8vw; text-align: center; }
+/* TESTIMONIALS */
+#testimonials { padding: 7rem 8vw; text-align: center; background: var(--bg); }
 
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
-  text-align: left;
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem; text-align: left; }
+
+.testi-card { padding: 2.5rem; border: 1px solid var(--border); position: relative; transition: box-shadow 0.3s; }
+.testi-card:hover { box-shadow: 0 8px 40px rgba(201,168,76,0.08); }
+
+.testi-quote-mark { font-family: var(--serif); font-size: 4rem; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; opacity: 0.4; }
+.testi-text { font-size: 0.95rem; color: var(--gold-dim); line-height: 1.9; margin-bottom: 1.5rem; font-style: italic; }
+.testi-name { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); }
+.testi-role { font-size: 0.75rem; color: rgba(201,168,76,0.4); letter-spacing: 0.08em; }
+
+/* SCHEDULE */
+#schedule { background: #080600; padding: 7rem 8vw; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+
+.schedule-sub { font-size: 1rem; color: rgba(201,168,76,0.55); line-height: 1.9; margin-bottom: 2rem; }
+
+.schedule-features { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 2.5rem; }
+.schedule-features li { font-size: 0.88rem; color: rgba(201,168,76,0.6); display: flex; align-items: center; gap: 0.7rem; }
+.schedule-features li::before { content: ''; display: inline-block; width: 16px; height: 1px; background: var(--gold); flex-shrink: 0; }
+
+.schedule-form { background: rgba(201,168,76,0.04); border: 1px solid var(--border); padding: 2.5rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem; }
+
+.form-group label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.45); }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  padding: 0.7rem 0;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--gold-light);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
 }
+.form-group select option { background: #1A1400; color: var(--gold-light); }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+.form-group input::placeholder, .form-group textarea::placeholder { color: rgba(201,168,76,0.25); }
+.form-group textarea { resize: none; min-height: 70px; }
 
-.testi-card {
-  padding: 2.5rem;
-  border: 1px solid var(--border);
-  position: relative;
-  transition: box-shadow 0.3s;
+.form-submit {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0D0D0D;
+  background: var(--gold);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.25s;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
-.testi-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.06); }
+.form-submit:hover { background: var(--gold-light); }
 
-.testi-quote-mark {
-  font-family: var(--serif);
-  font-size: 4rem;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-  opacity: 0.4;
+.form-success { display: none; text-align: center; padding: 3rem 2rem; }
+.form-success.visible { display: block; }
+.form-success-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.8rem; color: var(--gold-light); font-weight: 300; margin-bottom: 0.5rem; }
+.form-success p { font-size: 0.9rem; color: rgba(201,168,76,0.5); }
+
+/* FOOTER */
+footer { padding: 3rem 8vw; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg); }
+.footer-logo { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--gold-light); letter-spacing: 0.06em; }
+.footer-logo span { color: var(--gold); }
+.footer-copy { font-size: 0.75rem; color: rgba(201,168,76,0.4); letter-spacing: 0.08em; }
+.footer-links { display: flex; gap: 2rem; list-style: none; }
+.footer-links a { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: rgba(201,168,76,0.45); transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold-light); }
+
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes bounce { 0%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-8px); } }
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  #about { grid-template-columns: 1fr; }
+  .about-img { display: none; }
+  .stuck-grid { grid-template-columns: 1fr; }
+  #services { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  #schedule { grid-template-columns: 1fr; gap: 3rem; }
+  footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+  .nav-links { display: none; }
+  .form-row { grid-template-columns: 1fr; }
 }
-
-.testi-text { font-size: 0.95rem; color: var(--mid); line-height: 1.9; margin-bottom: 1.5rem; font-style: italic; }
-.testi-name { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal); }
-.testi-role { font-size: 0.75rem; color: var(--light); letter-spacing: 0.08em; }
-
-#schedule {
-  background: var(--charcoal);
-  padding: 7rem 8vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
-}
-
-#schedule .section-eyebrow { color: var(--accent-light); }
-#schedule .section-title { color: var(--cream); }
-
-.schedule-sub { font-size: 1rem; color: rgba(250,248,245,0.55); line-height: 1.9; margin-bottom: 2rem; }
-
-.schedule-features {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  margin-bottom: 2.5rem;
-}
-
-.schedule-features li {
-  font-size: 0.88rem;
-  color: rgba(250,248,245,0.6);
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.schedule-features li::before {
-  content: '';
 ```
+
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Austin<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#advice">Get Advice</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+    </ul>
+    <a href="https://calendly.com/7austinallen/30min" target="_blank" class="nav-cta">Book a Call</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-left">
+      <span class="hero-tag">Life Coach · Clarity · Direction · Growth</span>
+      <h1 class="hero-h1">Feeling stuck<br>is the start of<br><em>something new.</em></h1>
+      <p class="hero-sub">I help people who feel lost, overwhelmed, or at a crossroads find clarity, build momentum, and move toward a life they actually want.</p>
+      <div class="hero-btns">
+        <a href="https://calendly.com/7austinallen/30min" target="_blank" class="btn-primary">Schedule a Free Call</a>
+        <a href="#advice" class="btn-ghost">Get Instant Advice</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <div class="hero-placeholder">
+          <div class="hero-monogram">A</div>
+          <span class="hero-photo-note">Your photo here</span>
+        </div>
+      </div>
+      <div class="hero-stat-strip">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Lives changed</span></div>
+        <div class="stat"><span class="stat-num">5 yrs</span><span class="stat-label">Coaching experience</span></div>
+        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Client satisfaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-img reveal"><div class="about-mono">A</div></div>
+    <div class="reveal">
+      <span class="section-eyebrow">About Austin</span>
+      <h2 class="section-title">I've been exactly<br>where you are.</h2>
+      <div class="divider"></div>
+      <div class="about-body">
+        <p>There was a point in my life where I had everything on paper — the job, the routine, the plans — and still woke up every morning feeling like something was missing. I felt stuck, directionless, and honestly a little scared to admit it.</p>
+        <p>That experience became my calling. I trained as a certified life coach because I believe everyone deserves a space to untangle their thoughts, get honest with themselves, and take purposeful steps forward — without judgment.</p>
+        <p>My approach is direct, warm, and rooted in real conversation. I don't hand you a generic roadmap. I listen, ask the right questions, and help you find clarity that's uniquely yours.</p>
+      </div>
+      <span class="about-signature">— Austin</span>
+    </div>
+  </section>
+
+  <section id="stuck">
+    <span class="section-eyebrow reveal">Sound Familiar?</span>
+    <h2 class="section-title reveal">You might be here<br>right now.</h2>
+    <div class="divider" style="margin: 0 auto 1rem;"></div>
+    <div class="stuck-grid reveal">
+      <div class="stuck-card"><span class="stuck-icon">🧭</span><h3>Lost sense of direction</h3><p>You're moving through the motions but have no idea where you're actually headed — or if this is even what you want.</p></div>
+      <div class="stuck-card"><span class="stuck-icon">⚡</span><h3>Major life crossroads</h3><p>Career change, relationship shift, big move — something has to give, but the decision feels paralyzingly heavy.</p></div>
+      <div class="stuck-card"><span class="stuck-icon">🌀</span><h3>Overwhelmed & anxious</h3><p>There's too much happening at once. You can't think straight, and your goals feel buried under everything else.</p></div>
+      <div class="stuck-card"><span class="stuck-icon">🚧</span><h3>Self-sabotage patterns</h3><p>You know what you should do — but something keeps getting in the way. Old habits, fear, or just plain procrastination.</p></div>
+      <div class="stuck-card"><span class="stuck-icon">💭</span><h3>No one to talk to</h3><p>Friends and family mean well, but they're too close to the situation. You need an honest, outside perspective.</p></div>
+      <div class="stuck-card"><span class="stuck-icon">🌱</span><h3>Ready for a real change</h3><p>You feel it — something has to shift. You just need someone in your corner to help you make it happen.</p></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-sticky reveal">
+      <span class="section-eyebrow">How I Help</span>
+      <h2 class="section-title">Coaching that meets you where you are.</h2>
+      <div class="divider"></div>
+      <p style="font-size:0.9rem;color:var(--gold-dim);line-height:1.9;">Every engagement starts with a free discovery call — no pressure, just an honest conversation about where you are and where you want to go.</p>
+    </div>
+    <div class="service-list reveal">
+      <div class="service-item">
+        <span class="service-num">01</span>
+        <div>
+          <h3>Discovery Call</h3>
+          <p>A complimentary 30-minute conversation to get clear on your situation, your goals, and whether we're a good fit. Zero pressure, zero commitment.</p>
+          <span class="service-badge">Free — 30 min</span><br>
+          <a href="https://calendly.com/7austinallen/30min" target="_blank" class="service-btn">Book Free Call →</a>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-num">02</span>
+        <div>
+          <h3>Clarity Session</h3>
+          <p>A focused deep-dive where we cut through the noise, identify what's keeping you stuck, and map out your next clear steps. Perfect if you need a reset.</p>
+          <span class="service-badge">Single Session — 60 min</span><br>
+          <a href="https://buy.stripe.com/test_dRm00i80o7oQ7NUfJr7IY02" target="_blank" class="service-btn">Buy Now →</a>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-num">03</span>
+        <div>
+          <h3>90-Day Transformation</h3>
+          <p>My signature coaching package. We work together weekly over three months — setting goals, building habits, navigating obstacles, and creating lasting momentum.</p>
+          <span class="service-badge">12 Sessions — 3 Months</span><br>
+          <a href="https://buy.stripe.com/test_6oUcN46Wk24wd8eap77IY00" target="_blank" class="service-btn">Buy Now →</a>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-num">04</span>
+        <div>
+          <h3>Ongoing Partnership</h3>
+          <p>For clients who want continuous accountability and support as life evolves. Bi-weekly sessions with unlimited message access in between.</p>
+          <span class="service-badge">Biweekly Call</span><br>
+          <a href="https://buy.stripe.com/test_bJe14m80o24w4BI54N7IY01" target="_blank" class="service-btn">Buy Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advice">
+    <div class="advice-inner">
+      <span class="section-eyebrow reveal">Ask Austin</span>
+      <h2 class="section-title reveal">Tell me what's going on.<br>Let's start there.</h2>
+      <div class="divider" style="margin: 0 auto 1rem;"></div>
+      <p style="font-size:0.9rem;color:var(--gold-dim);line-height:1.8;margin-bottom:0;" class="reveal">Not ready to book a call yet? Share what's on your mind and get personalized guidance instantly.</p>
+      <div class="advice-box reveal">
+        <div class="advice-prompt-label">What's been weighing on you?</div>
+        <textarea class="advice-textarea" id="adviceInput" placeholder="I've been feeling stuck in my career lately. I don't know if I should stay or make a change, but I'm scared..."></textarea>
+        <div class="advice-actions">
+          <button class="advice-submit" id="adviceBtn" onclick="getAdvice()">Get My Perspective →</button>
+          <a href="https://calendly.com/7austinallen/30min" target="_blank" class="advice-submit">Book a Free Call →</a>
+        </div>
+        <div class="advice-response" id="adviceResponse">
+          <div class="advice-response-label">Austin's Perspective</div>
+          <div class="advice-response-text" id="adviceText"></div>
+          <div class="advice-cta-note" id="adviceCta" style="display:none;">
+            This is just the beginning. A real conversation can go so much deeper. <a href="https://calendly.com/7austinallen/30min" target="_blank" style="color:var(--gold);text-decoration:none;font-weight:500;">Book a free call</a> and let's talk through it together.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <span class="section-eyebrow reveal">Client Stories</span>
+    <h2 class="section-title reveal">Real people, real shifts.</h2>
+    <div class="divider" style="margin: 0 auto;"></div>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="testi-quote-mark">"</div>
+        <p class="testi-text">I came to Austin feeling completely lost after leaving a 10-year career. Within two months I had more clarity than I'd had in years. He asks the questions you don't want to face — and that's exactly why it works.</p>
+        <div class="testi-name">Sarah M.</div>
+        <div class="testi-role">Career Transition, 34</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote-mark">"</div>
+        <p class="testi-text">I'm not the type to open up easily. But Austin has a way of creating space where it doesn't feel forced. The 90-day program genuinely changed how I see myself and what I'm capable of.</p>
+        <div class="testi-name">Marcus T.</div>
+        <div class="testi-role">Personal Growth, 28</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote-mark">"</div>
+        <p class="testi-text">I booked the free discovery call on a whim. I didn't expect much. Two sessions in, I'd already made a decision I'd been putting off for three years. Worth every penny and more.</p>
+        <div class="testi-name">Jordan K.</div>
+        <div class="testi-role">Life Direction, 41</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="reveal">
+      <span class="section-eyebrow">Book a Call</span>
+      <h2 class="section-title">Let's talk.<br>No pressure.</h2>
+      <div class="divider"></div>
+      <p class="schedule-sub">The first step is just a conversation. 30 minutes, completely free. Tell me where you are — I'll help you see where you could go.</p>
+      <ul class="schedule-features">
+        <li>Free 30-minute discovery call</li>
+        <li>No commitment required</li>
+        <li>Available via Zoom or phone</li>
+        <li>Flexible scheduling — evenings & weekends</li>
+        <li>Completely confidential</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="schedule-form" id="scheduleForm">
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="Your name" id="fname" /></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name" id="lname" /></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" id="femail" /></div>
+        <div class="form-group">
+          <label>Best Time to Connect</label>
+          <select id="ftime">
+            <option value="" disabled selected>Select a time preference</option>
+            <option>Weekday mornings (8am – 12pm)</option>
+            <option>Weekday afternoons (12pm – 5pm)</option>
+            <option>Weekday evenings (5pm – 8pm)</option>
+            <option>Weekend mornings</option>
+            <option>Weekend afternoons</option>
+          </select>
+        </div>
+        <div class="form-group"><label>What's going on? (Optional)</label><textarea placeholder="Give me a brief sense of where you're at..." id="fmessage"></textarea></div>
+        <a href="https://calendly.com/7austinallen/30min" target="_blank" class="form-submit">Request My Free Call →</a>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✦</div>
+        <h3>You're on Austin's calendar.</h3>
+        <p>Expect an email within 24 hours to confirm your time slot. Talk soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Austin<span>.</span></div>
+    <span class="footer-copy">© 2026 Austin Clarity Co. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#schedule">Book</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    async function getAdvice() {
+      const input = document.getElementById('adviceInput').value.trim();
+      if (!input) return;
+      const btn = document.getElementById('adviceBtn');
+      const responseDiv = document.getElementById('adviceResponse');
+      const textDiv = document.getElementById('adviceText');
+      const ctaDiv = document.getElementById('adviceCta');
+      btn.disabled = true;
+      btn.textContent = 'Thinking...';
+      responseDiv.classList.add('visible');
+      textDiv.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
+      ctaDiv.style.display = 'none';
+      try {
+        const res = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514',
+            max_tokens: 1000,
+            system: `You are Austin, a warm, perceptive, and direct life coach. Someone has shared something personal with you. Respond as a compassionate but honest life coach: acknowledge what they're feeling, offer a clear reframe or insight, and give them 1–2 concrete things to reflect on or try. Keep it personal, grounded, and human. No bullet points. Write in flowing paragraphs. End with one thoughtful, open-ended coaching question. Keep your response under 220 words.`,
+            messages: [{ role: 'user', content: input }]
+          })
+        });
+        const data = await res.json();
+        const reply = data.content?.[0]?.text || "I appreciate you sharing that. Let's dig into this together on a call.";
+        textDiv.innerHTML = '';
+        let i = 0;
+        const type = () => {
+          if (i < reply.length) {
+            textDiv.innerHTML = reply.slice(0, ++i).replace(/\n/g, '<br>');
+            setTimeout(type, 18);
+          } else { ctaDiv.style.display = 'block'; }
+        };
+        type();
+      } catch (err) {
+        textDiv.innerHTML = "Thank you for sharing that. What you're feeling makes a lot of sense. Let's talk through it properly — book a free call and we'll go deeper.";
+        ctaDiv.style.display = 'block';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Get My Perspective →';
+    }
+
+    document.getElementById('adviceInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); getAdvice(); }
+    });
+  </script>
+
+</body>
+</html>
