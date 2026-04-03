@@ -817,7 +817,7 @@ footer {
       <li><a href="#advice">Get Advice</a></li>
       <li><a href="#testimonials">Stories</a></li>
     </ul>
-    <a href="#schedule" class="nav-cta">Book a Call</a>
+    <a href="https://calendly.com/7austinallen/30min" target="_blank" class="nav-cta">Book a Call</a>
   </nav>
 
   <!-- HERO -->
@@ -830,7 +830,7 @@ footer {
       </h1>
       <p class="hero-sub">I help people who feel lost, overwhelmed, or at a crossroads find clarity, build momentum, and move toward a life they actually want.</p>
       <div class="hero-btns">
-        <a href="#schedule" class="btn-primary">Schedule a Free Call</a>
+        <a href="https://calendly.com/7austinallen/30min" target="_blank" class="btn-primary">Schedule a Free Call</a>
         <a href="#advice" class="btn-ghost">Get Instant Advice</a>
       </div>
     </div>
@@ -933,6 +933,8 @@ footer {
           <h3>Discovery Call</h3>
           <p>A complimentary 30-minute conversation to get clear on your situation, your goals, and whether we're a good fit. Zero pressure, zero commitment.</p>
           <span class="service-badge">Free — 30 min</span>
+          <br>
+          <a href="https://calendly.com/7austinallen/30min" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Book Free Call →</a>
         </div>
       </div>
       <div class="service-item">
@@ -941,6 +943,8 @@ footer {
           <h3>Clarity Session</h3>
           <p>A focused deep-dive where we cut through the noise, identify what's keeping you stuck, and map out your next clear steps. Perfect if you need a reset.</p>
           <span class="service-badge">Single Session — 60 min</span>
+          <br>
+          <a href="https://buy.stripe.com/test_dRm00i80o7oQ7NUfJr7IY02" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
         </div>
       </div>
       <div class="service-item">
@@ -949,6 +953,8 @@ footer {
           <h3>90-Day Transformation</h3>
           <p>My signature coaching package. We work together weekly over three months — setting goals, building habits, navigating obstacles, and creating lasting momentum.</p>
           <span class="service-badge">12 Sessions — 3 Months</span>
+          <br>
+          <a href="https://buy.stripe.com/test_6oUcN46Wk24wd8eap77IY00" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
         </div>
       </div>
       <div class="service-item">
@@ -956,7 +962,9 @@ footer {
         <div>
           <h3>Ongoing Partnership</h3>
           <p>For clients who want continuous accountability and support as life evolves. Bi-weekly sessions with unlimited message access in between.</p>
-          <span class="service-badge">Monthly Retainer</span>
+          <span class="service-badge">Biweekly Call</span>
+          <br>
+          <a href="https://buy.stripe.com/test_bJe14m80o24w4BI54N7IY01" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
         </div>
       </div>
     </div>
@@ -1036,6 +1044,7 @@ footer {
       </ul>
     </div>
     <div class="reveal">
+      <a href="https://calendly.com/7austinallen/30min" target="_blank" style="display:inline-block;margin-bottom:2rem;font-size:0.8rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:var(--charcoal);background:var(--accent);padding:1rem 2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-light)'" onmouseout="this.style.background='var(--accent)'">📅 Pick a Time on My Calendar →</a>
       <div class="schedule-form" id="scheduleForm">
         <div class="form-row">
           <div class="form-group">
@@ -1168,15 +1177,48 @@ footer {
     });
 
     // Schedule form
-    function submitForm() {
+    async function submitForm() {
       const fname = document.getElementById('fname').value.trim();
+      const lname = document.getElementById('lname').value.trim();
       const femail = document.getElementById('femail').value.trim();
+      const ftime = document.getElementById('ftime').value;
+      const fmessage = document.getElementById('fmessage').value.trim();
+
       if (!fname || !femail) {
         alert('Please fill in at least your name and email.');
         return;
       }
-      document.getElementById('scheduleForm').style.display = 'none';
-      document.getElementById('formSuccess').classList.add('visible');
+
+      const btn = document.querySelector('.form-submit');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://formspree.io/f/xaqlpldw', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            firstName: fname,
+            lastName: lname,
+            email: femail,
+            bestTime: ftime,
+            message: fmessage
+          })
+        });
+
+        if (res.ok) {
+          document.getElementById('scheduleForm').style.display = 'none';
+          document.getElementById('formSuccess').classList.add('visible');
+        } else {
+          alert('Something went wrong. Please try again.');
+          btn.disabled = false;
+          btn.textContent = 'Request My Free Call';
+        }
+      } catch (err) {
+        alert('Something went wrong. Please check your connection and try again.');
+        btn.disabled = false;
+        btn.textContent = 'Request My Free Call';
+      }
     }
   </script>
 
