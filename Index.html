@@ -11,17 +11,115 @@
 
 ```
 :root {
-  --cream: #FAF8F5;
-  --warm-white: #F4F1EC;
-  --charcoal: #1C1C1C;
-  --mid: #5A5A5A;
-  --light: #A8A49E;
-  --accent: #B8975A;
-  --accent-light: #D4B87A;
-  --border: #E4E0D9;
+  --cream: #0D0D0D;
+  --warm-white: #141414;
+  --charcoal: #C9A84C;
+  --mid: #D4B87A;
+  --light: #8A7340;
+  --accent: #C9A84C;
+  --accent-light: #E2CC8A;
+  --border: #2A2200;
   --serif: 'Cormorant Garamond', serif;
   --sans: 'DM Sans', sans-serif;
 }
+
+body { background: #0D0D0D; }
+
+.hero-placeholder {
+  background: linear-gradient(145deg, #1A1400 0%, #2C2000 100%) !important;
+}
+
+.about-img {
+  background: linear-gradient(160deg, #1A1400 0%, #2C2000 100%) !important;
+}
+
+.stuck-card {
+  background: rgba(201,168,76,0.04) !important;
+  border: 1px solid rgba(201,168,76,0.12) !important;
+}
+.stuck-card:hover { background: rgba(201,168,76,0.09) !important; }
+.stuck-card h3 { color: #E2CC8A !important; }
+.stuck-card p { color: rgba(226,204,138,0.55) !important; }
+
+#stuck { background: #0A0800 !important; }
+#stuck .section-title { color: #E2CC8A !important; }
+
+#schedule { background: #080600 !important; }
+#schedule .section-title { color: #E2CC8A !important; }
+.schedule-sub { color: rgba(226,204,138,0.55) !important; }
+.schedule-features li { color: rgba(226,204,138,0.6) !important; }
+
+.schedule-form {
+  background: rgba(201,168,76,0.05) !important;
+  border: 1px solid rgba(201,168,76,0.15) !important;
+}
+
+.form-group label { color: rgba(201,168,76,0.5) !important; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #E2CC8A !important;
+  border-bottom: 1px solid rgba(201,168,76,0.2) !important;
+}
+.form-group select option { background: #1A1400 !important; }
+
+.form-submit {
+  color: #0D0D0D !important;
+  background: #C9A84C !important;
+}
+.form-submit:hover { background: #E2CC8A !important; }
+
+.form-success h3 { color: #E2CC8A !important; }
+.form-success p { color: rgba(226,204,138,0.5) !important; }
+
+nav { background: rgba(13,13,13,0.95) !important; }
+.nav-links a { color: rgba(201,168,76,0.7) !important; }
+.nav-links a:hover { color: #E2CC8A !important; }
+.nav-logo { color: #E2CC8A !important; }
+.nav-cta { background: #C9A84C !important; color: #0D0D0D !important; }
+.nav-cta:hover { background: #E2CC8A !important; }
+
+.hero-h1 { color: #E2CC8A !important; }
+.hero-sub { color: rgba(201,168,76,0.7) !important; }
+.btn-primary { background: #C9A84C !important; color: #0D0D0D !important; }
+.btn-primary:hover { background: #E2CC8A !important; }
+.btn-ghost { color: rgba(201,168,76,0.6) !important; border-color: rgba(201,168,76,0.3) !important; }
+.btn-ghost:hover { color: #E2CC8A !important; border-color: #C9A84C !important; }
+
+.stat-num { color: #E2CC8A !important; }
+.stat-label { color: rgba(201,168,76,0.5) !important; }
+.hero-monogram { color: rgba(201,168,76,0.1) !important; }
+.hero-photo-note { color: rgba(201,168,76,0.4) !important; }
+
+.section-title { color: #E2CC8A !important; }
+.about-body { color: rgba(201,168,76,0.7) !important; }
+.about-signature { color: #E2CC8A !important; }
+.about-mono { color: rgba(201,168,76,0.07) !important; }
+
+.service-item { border-color: rgba(201,168,76,0.15) !important; }
+.service-item h3 { color: #E2CC8A !important; }
+.service-item p { color: rgba(201,168,76,0.65) !important; }
+.service-btn { background: #C9A84C !important; color: #0D0D0D !important; }
+.service-btn:hover { background: #E2CC8A !important; }
+
+.advice-box { background: #141400 !important; border-color: rgba(201,168,76,0.2) !important; }
+.advice-textarea { color: #E2CC8A !important; border-color: rgba(201,168,76,0.2) !important; }
+.advice-textarea::placeholder { color: rgba(201,168,76,0.3) !important; }
+.advice-response-text { color: rgba(201,168,76,0.75) !important; }
+.advice-submit { background: #C9A84C !important; color: #0D0D0D !important; }
+.advice-submit:hover { background: #E2CC8A !important; }
+.advice-cta-note { color: rgba(201,168,76,0.7) !important; }
+
+.testi-card { border-color: rgba(201,168,76,0.15) !important; }
+.testi-text { color: rgba(201,168,76,0.65) !important; }
+.testi-name { color: #E2CC8A !important; }
+.testi-role { color: rgba(201,168,76,0.4) !important; }
+
+footer { border-color: rgba(201,168,76,0.15) !important; }
+.footer-logo { color: #E2CC8A !important; }
+.footer-copy { color: rgba(201,168,76,0.4) !important; }
+.footer-links a { color: rgba(201,168,76,0.5) !important; }
+.footer-links a:hover { color: #E2CC8A !important; }
 
 html { scroll-behavior: smooth; }
 
@@ -34,7 +132,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -89,7 +186,6 @@ nav.scrolled { border-color: var(--border); }
 }
 .nav-cta:hover { background: var(--accent); }
 
-/* ── HERO ── */
 #hero {
   min-height: 100vh;
   display: grid;
@@ -122,10 +218,7 @@ nav.scrolled { border-color: var(--border); }
   color: var(--charcoal);
   margin-bottom: 2rem;
 }
-.hero-h1 em {
-  font-style: italic;
-  color: var(--accent);
-}
+.hero-h1 em { font-style: italic; color: var(--accent); }
 
 .hero-sub {
   font-size: 1rem;
@@ -221,10 +314,7 @@ nav.scrolled { border-color: var(--border); }
   gap: 3rem;
 }
 
-.stat {
-  text-align: center;
-  animation: fadeUp 1s ease both 0.6s;
-}
+.stat { text-align: center; animation: fadeUp 1s ease both 0.6s; }
 .stat-num {
   font-family: var(--serif);
   font-size: 2rem;
@@ -239,7 +329,6 @@ nav.scrolled { border-color: var(--border); }
   color: var(--light);
 }
 
-/* ── SECTION SHARED ── */
 section { padding: 7rem 8vw; }
 
 .section-eyebrow {
@@ -268,7 +357,6 @@ section { padding: 7rem 8vw; }
   margin-bottom: 2rem;
 }
 
-/* ── ABOUT ── */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -317,7 +405,6 @@ section { padding: 7rem 8vw; }
   display: block;
 }
 
-/* ── STUCK SECTION ── */
 #stuck {
   text-align: center;
   background: var(--charcoal);
@@ -345,11 +432,7 @@ section { padding: 7rem 8vw; }
 }
 .stuck-card:hover { background: rgba(255,255,255,0.06); }
 
-.stuck-icon {
-  font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-  display: block;
-}
+.stuck-icon { font-size: 1.5rem; margin-bottom: 1.2rem; display: block; }
 
 .stuck-card h3 {
   font-family: var(--serif);
@@ -365,7 +448,6 @@ section { padding: 7rem 8vw; }
   line-height: 1.8;
 }
 
-/* ── SERVICES ── */
 #services {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -373,11 +455,7 @@ section { padding: 7rem 8vw; }
   align-items: start;
 }
 
-.services-sticky {
-  position: sticky;
-  top: 8rem;
-}
-
+.services-sticky { position: sticky; top: 8rem; }
 .service-list { display: flex; flex-direction: column; gap: 0; }
 
 .service-item {
@@ -406,11 +484,7 @@ section { padding: 7rem 8vw; }
   margin-bottom: 0.5rem;
 }
 
-.service-item p {
-  font-size: 0.9rem;
-  color: var(--mid);
-  line-height: 1.8;
-}
+.service-item p { font-size: 0.9rem; color: var(--mid); line-height: 1.8; }
 
 .service-badge {
   display: inline-block;
@@ -424,17 +498,24 @@ section { padding: 7rem 8vw; }
   margin-top: 0.8rem;
 }
 
-/* ── AI ADVICE ── */
-#advice {
-  background: var(--warm-white);
-  padding: 7rem 8vw;
+.service-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cream);
+  background: var(--charcoal);
+  padding: 0.6rem 1.2rem;
+  transition: background 0.25s;
 }
+.service-btn:hover { background: var(--accent); }
 
-.advice-inner {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
+#advice { background: var(--warm-white); padding: 7rem 8vw; }
+
+.advice-inner { max-width: 720px; margin: 0 auto; text-align: center; }
 
 .advice-box {
   background: var(--cream);
@@ -470,11 +551,7 @@ section { padding: 7rem 8vw; }
 .advice-textarea::placeholder { color: var(--light); }
 .advice-textarea:focus { border-color: var(--accent); }
 
-.advice-actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1.2rem;
-}
+.advice-actions { display: flex; justify-content: flex-end; margin-top: 1.2rem; }
 
 .advice-submit {
   font-family: var(--sans);
@@ -492,13 +569,7 @@ section { padding: 7rem 8vw; }
 .advice-submit:hover { background: var(--accent); }
 .advice-submit:disabled { opacity: 0.5; cursor: not-allowed; }
 
-.advice-response {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-  display: none;
-}
-
+.advice-response { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); display: none; }
 .advice-response.visible { display: block; }
 
 .advice-response-label {
@@ -510,11 +581,7 @@ section { padding: 7rem 8vw; }
   margin-bottom: 1rem;
 }
 
-.advice-response-text {
-  font-size: 0.95rem;
-  color: var(--mid);
-  line-height: 1.9;
-}
+.advice-response-text { font-size: 0.95rem; color: var(--mid); line-height: 1.9; }
 
 .advice-cta-note {
   margin-top: 1.5rem;
@@ -536,11 +603,7 @@ section { padding: 7rem 8vw; }
 .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
 .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
 
-/* ── TESTIMONIALS ── */
-#testimonials {
-  padding: 7rem 8vw;
-  text-align: center;
-}
+#testimonials { padding: 7rem 8vw; text-align: center; }
 
 .testi-grid {
   display: grid;
@@ -567,29 +630,10 @@ section { padding: 7rem 8vw; }
   opacity: 0.4;
 }
 
-.testi-text {
-  font-size: 0.95rem;
-  color: var(--mid);
-  line-height: 1.9;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
+.testi-text { font-size: 0.95rem; color: var(--mid); line-height: 1.9; margin-bottom: 1.5rem; font-style: italic; }
+.testi-name { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal); }
+.testi-role { font-size: 0.75rem; color: var(--light); letter-spacing: 0.08em; }
 
-.testi-name {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--charcoal);
-}
-
-.testi-role {
-  font-size: 0.75rem;
-  color: var(--light);
-  letter-spacing: 0.08em;
-}
-
-/* ── SCHEDULE ── */
 #schedule {
   background: var(--charcoal);
   padding: 7rem 8vw;
@@ -601,14 +645,8 @@ section { padding: 7rem 8vw; }
 
 #schedule .section-eyebrow { color: var(--accent-light); }
 #schedule .section-title { color: var(--cream); }
-#schedule .divider { }
 
-.schedule-sub {
-  font-size: 1rem;
-  color: rgba(250,248,245,0.55);
-  line-height: 1.9;
-  margin-bottom: 2rem;
-}
+.schedule-sub { font-size: 1rem; color: rgba(250,248,245,0.55); line-height: 1.9; margin-bottom: 2rem; }
 
 .schedule-features {
   list-style: none;
@@ -628,599 +666,4 @@ section { padding: 7rem 8vw; }
 
 .schedule-features li::before {
   content: '';
-  display: inline-block;
-  width: 16px; height: 1px;
-  background: var(--accent);
-  flex-shrink: 0;
-}
-
-.schedule-form {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 2.5rem;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.2rem;
-}
-
-.form-group label {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(250,248,245,0.4);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-  padding: 0.7rem 0;
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  color: var(--cream);
-  outline: none;
-  transition: border-color 0.2s;
-  width: 100%;
-}
-
-.form-group select option { background: #2a2a2a; color: var(--cream); }
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--accent);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: rgba(250,248,245,0.25);
-}
-
-.form-group textarea { resize: none; min-height: 70px; }
-
-.form-submit {
-  width: 100%;
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--charcoal);
-  background: var(--accent);
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.25s;
-}
-.form-submit:hover { background: var(--accent-light); }
-
-.form-success {
-  display: none;
-  text-align: center;
-  padding: 3rem 2rem;
-}
-.form-success.visible { display: block; }
-.form-success-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.form-success h3 {
-  font-family: var(--serif);
-  font-size: 1.8rem;
-  color: var(--cream);
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-.form-success p { font-size: 0.9rem; color: rgba(250,248,245,0.5); }
-
-/* ── FOOTER ── */
-footer {
-  padding: 3rem 8vw;
-  border-top: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--charcoal);
-  letter-spacing: 0.06em;
-}
-.footer-logo span { color: var(--accent); }
-
-.footer-copy {
-  font-size: 0.75rem;
-  color: var(--light);
-  letter-spacing: 0.08em;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-.footer-links a {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--light);
-  transition: color 0.2s;
-}
-.footer-links a:hover { color: var(--charcoal); }
-
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@keyframes bounce {
-  0%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-8px); }
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  #hero { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
-  #about { grid-template-columns: 1fr; }
-  .about-img { display: none; }
-  .stuck-grid { grid-template-columns: 1fr; }
-  #services { grid-template-columns: 1fr; }
-  .testi-grid { grid-template-columns: 1fr; }
-  #schedule { grid-template-columns: 1fr; gap: 3rem; }
-  footer { flex-direction: column; gap: 1.5rem; text-align: center; }
-  .nav-links { display: none; }
-  .form-row { grid-template-columns: 1fr; }
-}
 ```
-
-  </style>
-</head>
-<body>
-
-  <!-- NAV -->
-
-  <nav id="nav">
-    <a href="#hero" class="nav-logo">Austin<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#advice">Get Advice</a></li>
-      <li><a href="#testimonials">Stories</a></li>
-    </ul>
-    <a href="https://calendly.com/7austinallen/30min" target="_blank" class="nav-cta">Book a Call</a>
-  </nav>
-
-  <!-- HERO -->
-
-  <section id="hero">
-    <div class="hero-left">
-      <span class="hero-tag">Life Coach · Clarity · Direction · Growth</span>
-      <h1 class="hero-h1">
-        Feeling stuck<br>is the start of<br><em>something new.</em>
-      </h1>
-      <p class="hero-sub">I help people who feel lost, overwhelmed, or at a crossroads find clarity, build momentum, and move toward a life they actually want.</p>
-      <div class="hero-btns">
-        <a href="https://calendly.com/7austinallen/30min" target="_blank" class="btn-primary">Schedule a Free Call</a>
-        <a href="#advice" class="btn-ghost">Get Instant Advice</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-img-wrap">
-        <div class="hero-placeholder">
-          <div class="hero-monogram">A</div>
-          <span class="hero-photo-note">Your photo here</span>
-        </div>
-      </div>
-      <div class="hero-stat-strip">
-        <div class="stat">
-          <span class="stat-num">200+</span>
-          <span class="stat-label">Lives changed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">5 yrs</span>
-          <span class="stat-label">Coaching experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">98%</span>
-          <span class="stat-label">Client satisfaction</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-    <div class="about-img reveal">
-      <div class="about-mono">A</div>
-    </div>
-    <div class="reveal">
-      <span class="section-eyebrow">About Austin</span>
-      <h2 class="section-title">I've been exactly<br>where you are.</h2>
-      <div class="divider"></div>
-      <div class="about-body">
-        <p>There was a point in my life where I had everything on paper — the job, the routine, the plans — and still woke up every morning feeling like something was missing. I felt stuck, directionless, and honestly a little scared to admit it.</p>
-        <p>That experience became my calling. I trained as a certified life coach because I believe everyone deserves a space to untangle their thoughts, get honest with themselves, and take purposeful steps forward — without judgment.</p>
-        <p>My approach is direct, warm, and rooted in real conversation. I don't hand you a generic roadmap. I listen, ask the right questions, and help you find clarity that's uniquely yours.</p>
-      </div>
-      <span class="about-signature">— Austin</span>
-    </div>
-  </section>
-
-  <!-- STUCK SECTION -->
-
-  <section id="stuck">
-    <span class="section-eyebrow reveal">Sound Familiar?</span>
-    <h2 class="section-title reveal">You might be here<br>right now.</h2>
-    <div class="divider" style="margin: 0 auto 1rem;"></div>
-    <div class="stuck-grid reveal">
-      <div class="stuck-card">
-        <span class="stuck-icon">🧭</span>
-        <h3>Lost sense of direction</h3>
-        <p>You're moving through the motions but have no idea where you're actually headed — or if this is even what you want.</p>
-      </div>
-      <div class="stuck-card">
-        <span class="stuck-icon">⚡</span>
-        <h3>Major life crossroads</h3>
-        <p>Career change, relationship shift, big move — something has to give, but the decision feels paralyzingly heavy.</p>
-      </div>
-      <div class="stuck-card">
-        <span class="stuck-icon">🌀</span>
-        <h3>Overwhelmed & anxious</h3>
-        <p>There's too much happening at once. You can't think straight, and your goals feel buried under everything else.</p>
-      </div>
-      <div class="stuck-card">
-        <span class="stuck-icon">🚧</span>
-        <h3>Self-sabotage patterns</h3>
-        <p>You know what you should do — but something keeps getting in the way. Old habits, fear, or just plain procrastination.</p>
-      </div>
-      <div class="stuck-card">
-        <span class="stuck-icon">💭</span>
-        <h3>No one to talk to</h3>
-        <p>Friends and family mean well, but they're too close to the situation. You need an honest, outside perspective.</p>
-      </div>
-      <div class="stuck-card">
-        <span class="stuck-icon">🌱</span>
-        <h3>Ready for a real change</h3>
-        <p>You feel it — something has to shift. You just need someone in your corner to help you make it happen.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-
-  <section id="services">
-    <div class="services-sticky reveal">
-      <span class="section-eyebrow">How I Help</span>
-      <h2 class="section-title">Coaching that meets you where you are.</h2>
-      <div class="divider"></div>
-      <p style="font-size:0.9rem;color:var(--mid);line-height:1.9;">Every engagement starts with a free discovery call — no pressure, just an honest conversation about where you are and where you want to go.</p>
-    </div>
-    <div class="service-list reveal">
-      <div class="service-item">
-        <span class="service-num">01</span>
-        <div>
-          <h3>Discovery Call</h3>
-          <p>A complimentary 30-minute conversation to get clear on your situation, your goals, and whether we're a good fit. Zero pressure, zero commitment.</p>
-          <span class="service-badge">Free — 30 min</span>
-          <br>
-          <a href="https://calendly.com/7austinallen/30min" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Book Free Call →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <span class="service-num">02</span>
-        <div>
-          <h3>Clarity Session</h3>
-          <p>A focused deep-dive where we cut through the noise, identify what's keeping you stuck, and map out your next clear steps. Perfect if you need a reset.</p>
-          <span class="service-badge">Single Session — 60 min</span>
-          <br>
-          <a href="https://buy.stripe.com/test_dRm00i80o7oQ7NUfJr7IY02" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <span class="service-num">03</span>
-        <div>
-          <h3>90-Day Transformation</h3>
-          <p>My signature coaching package. We work together weekly over three months — setting goals, building habits, navigating obstacles, and creating lasting momentum.</p>
-          <span class="service-badge">12 Sessions — 3 Months</span>
-          <br>
-          <a href="https://buy.stripe.com/test_6oUcN46Wk24wd8eap77IY00" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <span class="service-num">04</span>
-        <div>
-          <h3>Ongoing Partnership</h3>
-          <p>For clients who want continuous accountability and support as life evolves. Bi-weekly sessions with unlimited message access in between.</p>
-          <span class="service-badge">Biweekly Call</span>
-          <br>
-          <a href="https://buy.stripe.com/test_bJe14m80o24w4BI54N7IY01" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--cream);background:var(--charcoal);padding:0.6rem 1.2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--charcoal)'">Buy Now →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI ADVICE SECTION -->
-
-  <section id="advice">
-    <div class="advice-inner">
-      <span class="section-eyebrow reveal">Ask Austin</span>
-      <h2 class="section-title reveal">Tell me what's going on.<br>Let's start there.</h2>
-      <div class="divider" style="margin: 0 auto 1rem;"></div>
-      <p style="font-size:0.9rem;color:var(--mid);line-height:1.8;margin-bottom:0;" class="reveal">Not ready to book a call yet? Share what's on your mind and get personalized guidance instantly — powered by the same approach I use with every client.</p>
-
-```
-  <div class="advice-box reveal">
-    <div class="advice-prompt-label">What's been weighing on you?</div>
-    <textarea class="advice-textarea" id="adviceInput" placeholder="I've been feeling stuck in my career lately. I don't know if I should stay or make a change, but I'm scared..."></textarea>
-    <div class="advice-actions">
-      <button class="advice-submit" id="adviceBtn" onclick="getAdvice()">Get My Perspective →</button>
-    </div>
-    <div class="advice-response" id="adviceResponse">
-      <div class="advice-response-label">Austin's Perspective</div>
-      <div class="advice-response-text" id="adviceText"></div>
-      <div class="advice-cta-note" id="adviceCta" style="display:none;">
-        This is just the beginning. A real conversation can go so much deeper. <a href="#schedule" style="color:var(--accent);text-decoration:none;font-weight:500;">Book a free call</a> and let's talk through it together.
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- TESTIMONIALS -->
-
-  <section id="testimonials">
-    <span class="section-eyebrow reveal">Client Stories</span>
-    <h2 class="section-title reveal">Real people, real shifts.</h2>
-    <div class="divider" style="margin: 0 auto;" class="reveal"></div>
-    <div class="testi-grid reveal">
-      <div class="testi-card">
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">I came to Austin feeling completely lost after leaving a 10-year career. Within two months I had more clarity than I'd had in years. He asks the questions you don't want to face — and that's exactly why it works.</p>
-        <div class="testi-name">Sarah M.</div>
-        <div class="testi-role">Career Transition, 34</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">I'm not the type to open up easily. But Austin has a way of creating space where it doesn't feel forced. The 90-day program genuinely changed how I see myself and what I'm capable of.</p>
-        <div class="testi-name">Marcus T.</div>
-        <div class="testi-role">Personal Growth, 28</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">I booked the free discovery call on a whim. I didn't expect much. Two sessions in, I'd already made a decision I'd been putting off for three years. Worth every penny and more.</p>
-        <div class="testi-name">Jordan K.</div>
-        <div class="testi-role">Life Direction, 41</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SCHEDULE -->
-
-  <section id="schedule">
-    <div class="reveal">
-      <span class="section-eyebrow">Book a Call</span>
-      <h2 class="section-title">Let's talk.<br>No pressure.</h2>
-      <div class="divider"></div>
-      <p class="schedule-sub">The first step is just a conversation. 30 minutes, completely free. Tell me where you are — I'll help you see where you could go.</p>
-      <ul class="schedule-features">
-        <li>Free 30-minute discovery call</li>
-        <li>No commitment required</li>
-        <li>Available via Zoom or phone</li>
-        <li>Flexible scheduling — evenings & weekends</li>
-        <li>Completely confidential</li>
-      </ul>
-    </div>
-    <div class="reveal">
-      <a href="https://calendly.com/7austinallen/30min" target="_blank" style="display:inline-block;margin-bottom:2rem;font-size:0.8rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:var(--charcoal);background:var(--accent);padding:1rem 2rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-light)'" onmouseout="this.style.background='var(--accent)'">📅 Pick a Time on My Calendar →</a>
-      <div class="schedule-form" id="scheduleForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="Your name" id="fname" />
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Last name" id="lname" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="your@email.com" id="femail" />
-        </div>
-        <div class="form-group">
-          <label>Best Time to Connect</label>
-          <select id="ftime">
-            <option value="" disabled selected>Select a time preference</option>
-            <option>Weekday mornings (8am – 12pm)</option>
-            <option>Weekday afternoons (12pm – 5pm)</option>
-            <option>Weekday evenings (5pm – 8pm)</option>
-            <option>Weekend mornings</option>
-            <option>Weekend afternoons</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>What's going on? (Optional)</label>
-          <textarea placeholder="Give me a brief sense of where you're at..." id="fmessage"></textarea>
-        </div>
-        <button class="form-submit" onclick="submitForm()">Request My Free Call</button>
-      </div>
-      <div class="form-success" id="formSuccess">
-        <div class="form-success-icon">✦</div>
-        <h3>You're on Austin's calendar.</h3>
-        <p>Expect an email within 24 hours to confirm your time slot. Talk soon.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer>
-    <div class="footer-logo">Austin<span>.</span></div>
-    <span class="footer-copy">© 2026 Austin. All rights reserved.</span>
-    <ul class="footer-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#schedule">Book</a></li>
-    </ul>
-  </footer>
-
-  <script>
-    // Nav scroll effect
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // Scroll reveal
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => observer.observe(el));
-
-    // AI Advice
-    async function getAdvice() {
-      const input = document.getElementById('adviceInput').value.trim();
-      if (!input) return;
-
-      const btn = document.getElementById('adviceBtn');
-      const responseDiv = document.getElementById('adviceResponse');
-      const textDiv = document.getElementById('adviceText');
-      const ctaDiv = document.getElementById('adviceCta');
-
-      btn.disabled = true;
-      btn.textContent = 'Thinking...';
-      responseDiv.classList.add('visible');
-      textDiv.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
-      ctaDiv.style.display = 'none';
-
-      try {
-        const res = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            system: `You are Austin, a warm, perceptive, and direct life coach. Someone has shared something personal with you — something that's weighing on them. Respond exactly as a compassionate but honest life coach would: acknowledge what they're feeling, offer a clear reframe or insight, and give them 1–2 concrete things to reflect on or try. Keep it personal, grounded, and human. Do not be generic. Do not use bullet points. Write in flowing paragraphs. End with one thoughtful, open-ended coaching question. Keep your response under 220 words.`,
-            messages: [{ role: 'user', content: input }]
-          })
-        });
-
-        const data = await res.json();
-        const reply = data.content?.[0]?.text || "I appreciate you sharing that with me. Let's dig into this together on a call.";
-        
-        // Typewriter effect
-        textDiv.innerHTML = '';
-        let i = 0;
-        const type = () => {
-          if (i < reply.length) {
-            textDiv.innerHTML = reply.slice(0, ++i).replace(/\n/g, '<br>');
-            setTimeout(type, 18);
-          } else {
-            ctaDiv.style.display = 'block';
-          }
-        };
-        type();
-      } catch (err) {
-        textDiv.innerHTML = "Thank you for sharing that. What you're feeling makes a lot of sense, and the fact that you're naming it is already a meaningful step. Let's talk through it properly — book a free call and we'll go deeper.";
-        ctaDiv.style.display = 'block';
-      }
-
-      btn.disabled = false;
-      btn.textContent = 'Get My Perspective →';
-    }
-
-    // Allow Enter+Shift for newline, Enter to submit
-    document.getElementById('adviceInput').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && !e.shiftKey) {
-        e.preventDefault();
-        getAdvice();
-      }
-    });
-
-    // Schedule form
-    async function submitForm() {
-      const fname = document.getElementById('fname').value.trim();
-      const lname = document.getElementById('lname').value.trim();
-      const femail = document.getElementById('femail').value.trim();
-      const ftime = document.getElementById('ftime').value;
-      const fmessage = document.getElementById('fmessage').value.trim();
-
-      if (!fname || !femail) {
-        alert('Please fill in at least your name and email.');
-        return;
-      }
-
-      const btn = document.querySelector('.form-submit');
-      btn.disabled = true;
-      btn.textContent = 'Sending...';
-
-      try {
-        const res = await fetch('https://formspree.io/f/xaqlpldw', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({
-            firstName: fname,
-            lastName: lname,
-            email: femail,
-            bestTime: ftime,
-            message: fmessage
-          })
-        });
-
-        if (res.ok) {
-          document.getElementById('scheduleForm').style.display = 'none';
-          document.getElementById('formSuccess').classList.add('visible');
-        } else {
-          alert('Something went wrong. Please try again.');
-          btn.disabled = false;
-          btn.textContent = 'Request My Free Call';
-        }
-      } catch (err) {
-        alert('Something went wrong. Please check your connection and try again.');
-        btn.disabled = false;
-        btn.textContent = 'Request My Free Call';
-      }
-    }
-  </script>
-
-</body>
-</html>
